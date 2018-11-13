@@ -1,0 +1,289 @@
+body{
+    background-color: rgb(53, 71, 85);
+    font:62.5%/22px Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height:100vh;
+    width: 100%;
+}
+html{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.meni{
+    height: 60px;    background-color: rgb(34, 38, 43);
+
+
+}
+.meni ul {
+    
+    line-height: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+display: inline;
+margin-left: 15%;
+text-align: left;
+}
+.meni li {
+
+    list-style-type: none;
+    display: inline;
+   
+}
+.meni a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.meni li:hover a{
+    text-decoration: underline;
+}
+.active {
+
+    background:url(https://www.izip.com/images/layout/menu_active.png) 0 0 repeat-x
+
+}
+.header a {
+    text-decoration: none;
+color: white;
+font-size: 12px;
+}
+.header {
+    padding-top: 20px;
+    margin-left: 42%;
+    margin-right: 42%;
+    font-weight: bold;
+}
+
+.sadrzaj{
+    padding-top: 5%;
+   display: flex;
+   width: auto;
+   margin-left: 10%;
+   margin-right: 10%;
+   position: relative;
+   
+}
+.lijevo {
+    flex: 1;
+}
+.lijevo h1{
+    font-family:  Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.lijevo p {
+    font-size: 0.8rem;
+     
+}
+.lijevo ul {
+    margin: 0;
+    padding: 0;
+}
+.lijevo li {
+list-style-type: none;
+display: inline-block;
+height: 40px;
+
+}
+.lijevo li:not(:first-child) {
+    width: 118px;
+}
+.lijevo a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.dow{
+    background: url('https://www.izip.com/images/layout/btn_dl.png');
+    background-size: 100% 100%;
+        padding: 5px;
+    font-size: 14px;
+    text-indent: 30px;
+    font-weight: bold;
+text-align: center;
+}
+.zeleni{   
+    background-size: 100% 100%;
+
+    text-align: center;
+    
+    font-weight: bold;
+width: 118px;
+padding: 5px;
+    font-size: 12px;
+
+    background: url('https://www.izip.com/images/layout/btn_features.png');
+    background-repeat: no-repeat;
+
+}
+.desno{
+    flex: 1;
+    background-image: url("https://www.izip.com/images/layout/mac_bg.png");
+    background-size: 100% 100%;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+text-align: center;
+
+}
+.desno a{
+    position: absolute;
+top: 150px;
+right: 180px;
+    background-image: url('https://www.izip.com/images/layout/btn_dl_big.png');
+display: block;
+width: 210px;
+height: 77px;
+font-size: 20px;
+line-height: 70px;
+color: white;
+text-decoration: none;
+}
+.kraj {
+    width: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+   background:  #28323b;
+   border-top: 1px solid #5f798c;
+    border-bottom: 1px solid #1f2933;
+  
+      
+    
+}
+.footer::after {
+    content: "";
+display: table;
+clear: both;
+}
+.kraj h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.kraj p {
+    font-size: 0.8rem;
+}
+.kraj::after{
+    content: ".";
+    display: block;
+    clear: both;
+    line-height: 0;
+}
+.prvi {
+    width: 30%;float: left;
+}
+.prvi a{
+    color: white;
+    text-decoration: none;
+
+}
+.prvi:not(:first-child) {
+padding-left: 30px;}
+.star {
+   background-image:  url(https://www.izip.com//images/icons/cross.png) 0 9px no-repeat;
+}
+.footer{
+
+padding-left: 8%;
+padding-right: 8%;
+    background-color:#22262b;
+   
+    
+}
+.lijevo1{
+float: left;
+width: 50%;
+padding-top: 3%;
+}
+.desno1{
+    width: 50%;
+text-align: right;
+float: left;
+padding-top: 3%;
+}
+.desno1 li {
+    line-height: 10px;
+}
+.footer li,a,ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+.lijevo1 ul,img {
+    float: left;
+    display: block;
+}
+.lijevo1 li{
+   line-height: 10px;
+}
+.footer::after{
+    content: "";
+}
+.levo {
+    float: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .lijevo{
+        width: 100%;
+        display: block;
+        float: left;
+    }
+    .desno {
+        display: none;
+    }
+    .sadrzaj{
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 700px) {
+    .prvi{
+        display: block;
+        width: 100%;
+        padding: 0 !important;
+    }
+    .lijevo1,.desno1 {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .header{
+    margin-left: 3%;
+    margin-right: 3%;
+    }
+    hr{
+
+            width: 100%;
+    }
+    .meni a{
+        padding: 2px;
+    }
+    .meni ul{
+        display: block;
+        width: 100%;
+        margin: 0;
+
+    }
+    .meni li {
+        width: 20%;
+        float: left;
+    }
+}
+

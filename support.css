@@ -1,0 +1,222 @@
+body{
+    background-color: rgb(53, 71, 85);
+    font:62.5%/22px Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height:100vh;
+    width: 100%;
+}
+html{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.meni{
+    height: 60px;    background-color: rgb(34, 38, 43);
+
+
+}
+.meni ul {
+    
+    line-height: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+display: inline;
+margin-left: 15%;
+text-align: left;
+}
+.meni li {
+
+    list-style-type: none;
+    display: inline;
+   
+}
+.meni a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.meni li:hover a{
+    text-decoration: underline;
+}
+.active {
+
+    background:url(https://www.izip.com/images/layout/menu_active.png) 0 0 repeat-x
+
+}
+.header a {
+    text-decoration: none;
+color: white;
+font-size: 12px;
+}
+.header {
+    padding-top: 20px;
+    margin-left: 42%;
+    margin-right: 42%;
+    font-weight: bold;
+}
+.sadrzaj {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+display: flex;
+border-bottom: 1px solid #1f2933;
+
+}
+.lijevo {
+    margin-top: 5%;
+   
+    flex: 1;
+}
+.lijevo h1{
+    font-family:'BebasNeueRegular', Arial, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.lijevo p {
+    font-size: 1rem;
+     
+}
+.desno {
+    padding-left: 20px;
+    flex: 2;
+
+}
+.desno a {
+    
+}
+.sadrzaj h1,h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+.sadrzaj p,a,li {
+    font-size: 0.8rem;
+}
+.footer{
+
+    padding-left: 8%;
+    padding-right: 8%;
+        background-color:#22262b;
+       
+        
+    }
+    .lijevo1{
+    float: left;
+    width: 50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    }
+    .desno1{
+        width: 50%;
+    text-align: right;
+    float: left;
+    padding-bottom: 3%;
+
+    padding-top: 3%;
+    }
+    .desno1 li {
+        line-height: 10px;
+    }
+    .footer li,a,ul {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+    .lijevo1 ul,img {
+        float: left;
+        display: block;
+    }
+    .lijevo1 li{
+       line-height: 10px;
+    }
+    .footer::after{
+        content: "";
+    }
+    .footer li,a{
+        font:62.5%/22px Helvetica, Arial, sans-serif;
+font-size: 10px;
+line-height: 10px;
+    }
+    .footer::after {
+        content: "";
+  display: table;
+  clear: both;
+    }
+    .footer {
+        
+    }
+    @media only screen and (max-width: 1000px) {
+    
+        .lijevo{
+            width: 100%;
+            display: block;
+            float: left;
+        }
+        .desno {
+float: left;
+width:100%;  
+padding: 0;
+padding-left: 2%;
+      }
+        .sadrzaj{
+flex-direction: column;    margin: 0;    }
+       
+    
+    }
+    @media only screen and (max-width: 700px) {
+        .prvi{
+            display: block;
+            width: 100%;
+            padding: 0 !important;
+        }
+        .lijevo1,.desno1 {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        .header{
+        margin-left: 3%;
+        margin-right: 3%;
+        }
+        hr{
+    
+                width: 100%;
+        }
+        .meni ul{
+            display: block;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+    
+        }
+        .meni li {
+            width: 20%;
+            float: left;
+        }
+        .meni a{
+            padding: 2px;
+        }
+    }
+    .sadrzaj ::after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    
